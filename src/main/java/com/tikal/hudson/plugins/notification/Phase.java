@@ -87,6 +87,7 @@ public enum Phase {
         buildState.setPhase( this );
         buildState.setScm( scmState );
         buildState.setLog( log );
+        buildState.setDuration( run.getDurationString());
 
         if ( result != null ) {
             buildState.setStatus(result.toString());

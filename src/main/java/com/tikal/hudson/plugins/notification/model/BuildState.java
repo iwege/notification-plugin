@@ -49,6 +49,8 @@ public class BuildState {
 
     private StringBuilder log;
 
+    private String duration;
+
     /**
      *  Map of artifacts: file name => Map of artifact locations ( location name => artifact URL )
      *  ---
@@ -137,6 +139,13 @@ public class BuildState {
 
     public void setLog(StringBuilder log) {
         this.log = log;
+    }
+
+    public String getDuration(){
+        return duration;
+    }
+    public void setDuration(String duration){
+        this.duration = duration;
     }
 
     /**
